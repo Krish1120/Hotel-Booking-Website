@@ -1,4 +1,11 @@
 #hotel img {
   height: 500px;
   width: 500px;
+  margin: 2% 4% 0 4%;
+}
+#inputform {
+  margin: 0% 4% 1% 4%;
+}
+#hoteldescription {
+  margin: 1% 4% 2% 4%;
 }
