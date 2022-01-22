@@ -2,10 +2,38 @@
   height: 200px;
   width: 250px;
 }
+#listview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
 
 .hotel {
   margin: 2%;
   margin: 2%;
   width: 40%;
   background-color: rgb(132, 136, 139);
+}
+.hotel a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+ul li {
+  margin: 1%;
+}
+#mapview {
+  display: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+  right: 65px;
+  justify-content: center;
 }

@@ -19,3 +19,8 @@
   padding: 1% 2%;
   border-radius: 5px;
 }
+
+#pay {
+  text-decoration: none;
+  color: black;
+}

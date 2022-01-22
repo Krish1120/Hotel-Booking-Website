@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/detail.css" />
     <title>Detail</title>
@@ -11,83 +15,92 @@
   <body>
     <div class="maincontainer">
       <header>
-        <img src="assests/images/logo.png" alt="logo" class="logo" />
+        <a href="index.html"
+          ><img src="assests/images/logo.png" alt="logo" class="logo"
+        /></a>
         <a href="login.html">Login</a>
       </header>
-      <div id="hotel">
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-          alt=""
-        />
-        <div id="inputform">
-          <form action="payment.html" method="get">
-            <label for="pcount">Adult: </label>
-            <input
-              type="number"
-              value="1"
-              min="1"
-              name="pcount"
-              autocomplete="off"
-              required
-            /><br />
-            <label for="name">Name: </label>
-            <input type="text" name="name" autocomplete="off" required /><br />
-            <label for="indate">From Date: </label>
-            <input
-              type="date"
-              name="indate"
-              autocomplete="off"
-              required
-            /><br />
-            <label for="outdate">To Date: </label>
-            <input
-              type="date"
-              name="outdate"
-              autocomplete="off"
-              required
-            /><br />
-            <label for="total">Total: </label>
-            <input type="number" name="total" disabled /><br />
-            <button type="submit">Book Now</button>
-          </form>
-        </div>
-        <div id="hoteldescription">
-          <h2>Radisson Blu Hotel</h2>
-          <p>RATING</p>
-          <p>5 Star</p>
-          <p>AMENITIES</p>
-          <ul>
-            <li>Room service</li>
-            <li>Restaurant</li>
-            <li>Business center</li>
-            <li>Fitness centre</li>
-            <li>Pool</li>
-          </ul>
-          <h4>DESCRIPTION</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+      <div class="content">
+        <div id="hotel">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+            alt=""
+          />
+          <div id="inputform">
+            <form action="payment.html" method="get">
+              <label for="pcount">Adult: </label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                name="pcount"
+                autocomplete="off"
+                required
+              /><br />
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                autocomplete="off"
+                required
+              /><br />
+              <label for="indate">From Date: </label>
+              <input
+                type="date"
+                name="indate"
+                autocomplete="off"
+                required
+              /><br />
+              <label for="outdate">To Date: </label>
+              <input
+                type="date"
+                name="outdate"
+                autocomplete="off"
+                required
+              /><br />
+              <label for="total">Total: </label>
+              <input type="number" name="total" disabled /><br />
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+          <div id="hoteldescription">
+            <h2>Radisson Blu Hotel</h2>
+            <p>RATING</p>
+            <p>5 Star</p>
+            <p>AMENITIES</p>
+            <ul>
+              <li>Room service</li>
+              <li>Restaurant</li>
+              <li>Business center</li>
+              <li>Fitness centre</li>
+              <li>Pool</li>
+            </ul>
+            <h4>DESCRIPTION</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
       </div>
       <footer>
-        <div>
+        <div class="contact">
           <a href="contact.html">Contact Us</a>
+          <div id="socialmedia">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img src="assests/images/facebook.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img src="assests/images/instagram.png" alt=""
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img src="assests/images/twitter.png" alt=""
+            /></a>
+          </div>
         </div>
-        <div id="socialmedia">
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="assests/images/facebook.png" alt=""
-          /></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="assests/images/instagram.png" alt=""
-          /></a>
-          <a href="https://twitter.com" target="_blank"
-            ><img src="assests/images/twitter.png" alt=""
-          /></a>
-        </div>
-        <div>© 2021 ROOM SEARCH PVT.LTD.</div>
+        <div id="license">© 2021 ROOM SEARCH PVT.LTD.</div>
       </footer>
     </div>
   </body>

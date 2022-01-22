@@ -10,7 +10,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .locations {
   margin: 0 15% 0 15%;
+}
+
+form input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  width: 100%;
+}
+#more a {
+  margin: 0 0 3% 0;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
