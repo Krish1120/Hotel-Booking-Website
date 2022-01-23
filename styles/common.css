@@ -14,12 +14,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 footer {
   background-color: rosybrown;
   position: sticky;
   bottom: 0;
-  padding: 1% 0 0.5% 0;
+  padding: 1%;
+  display: flexbox;
+  align-items: center;
+  justify-content: space-between;
 }
 .contact {
   padding: 0% 1%;
@@ -29,13 +33,11 @@ footer {
 }
 #license {
   font-size: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 header a {
   text-decoration: none;
   color: black;
+  margin-right: 1%;
 }
 
 footer a {
@@ -50,6 +52,7 @@ footer a {
   height: 60px;
   width: 60px;
 }
+
 #socialmedia a img {
   height: 20px;
   width: 22px;

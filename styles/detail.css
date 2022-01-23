@@ -1,11 +1,65 @@
-#hotel img {
-  height: 500px;
-  width: 500px;
-  margin: 2% 4% 0 4%;
+.location img {
+  height: 350px;
+  width: 450px;
+}
+.location {
+  outline: 1px solid black;
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 #inputform {
-  margin: 0% 4% 1% 4%;
+  margin: 0% 4% 1% 3%;
+  flex-grow: 1;
 }
-#hoteldescription {
-  margin: 1% 4% 2% 4%;
+#input1 {
+  position: relative;
+  left: 85px;
+  width: 60%;
+}
+#input2 {
+  position: relative;
+  left: 83px;
+  width: 60%;
+}
+#input3 {
+  position: relative;
+  left: 50px;
+  width: 60%;
+}
+#input4 {
+  position: relative;
+  left: 70px;
+  width: 60%;
+}
+#input5 {
+  position: relative;
+  left: 88px;
+  width: 60%;
+}
+
+button {
+  position: relative;
+  left: 45%;
+  top: 20px;
+  padding: 2%;
+}
+form,
+label,
+input {
+  margin: 5% 5% 5% 0%;
+}
+h4 {
+  font-family: cursive;
+}
+
+.content {
+  margin: 2%;
+}
+
+#hotel {
+  height: 400px;
+  display: flex;
+  outline: 1px solid black;
 }

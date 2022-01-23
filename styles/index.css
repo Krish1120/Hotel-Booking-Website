@@ -1,12 +1,19 @@
+.content {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
 .locations a img {
   height: 150px;
   width: 150px;
-  padding: 4%;
   border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
 }
+
 .searchbar {
   background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-  height: 480px;
+  height: 390px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +23,10 @@
 }
 
 .locations {
-  margin: 0 15% 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4%;
 }
 
 form input {
@@ -25,7 +35,8 @@ form input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
   border-radius: 12px;
-  width: 100%;
+  width: 350px;
+  outline: none;
 }
 #more a {
   margin: 0 0 3% 0;
@@ -34,4 +45,35 @@ form input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.location {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97.8%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25%;
+}
+
+.location:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

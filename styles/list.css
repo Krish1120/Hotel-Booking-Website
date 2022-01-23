@@ -9,11 +9,14 @@
 }
 
 .hotel {
-  margin: 2%;
-  margin: 2%;
+  margin: 0.5% 2% 2% 2%;
+  height: fit-content;
   width: 40%;
-  background-color: rgb(132, 136, 139);
+  display: flex;
+  gap: 5%;
+  background-color: lightgrey;
 }
+
 .hotel a {
   text-decoration: none;
   color: black;
