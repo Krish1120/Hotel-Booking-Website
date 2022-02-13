@@ -20,11 +20,73 @@
   </head>
   <body>
     <div class="maincontainer">
-      <header>
-        <a href="index.html"
-          ><img src="assests/images/logo.png" alt="logo" class="logo"
-        /></a>
-        <a href="login.html">Login</a>
+      <header class="d-flex justify-content-space-between align-items-center">
+        <img src="assests/images/logo.png" alt="logo" class="logo" />
+        <button
+          type="button"
+          class="btn btn-light btn-primary"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          LOGIN
+        </button>
+        
+        <!--LoginIn Modal -->
+        <div
+        class="modal"
+        id="loginModal"
+        data-backdrop="false"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Please Login
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="loginform" action="index.html" method="get">
+                <div class="form-group row">
+                  <label for="uname" class="col-sm-5 col-form-label text-center">Username:</label>
+                  <div class="col-sm-6">
+                    <input      
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    autocomplete="off"
+                    required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="pswd" class="col-sm-5 col-form-label text-center">Password:</label>
+                  <div class="col-sm-6">
+                    <input      
+                    type="password"
+                    placeholder="Enter Password"
+                    name="pswd"
+                    autocomplete="off"
+                    required>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-flex align-items-center justify-content-center">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
       </header>
       <div class="content">
         <div id="hotel">
@@ -36,43 +98,62 @@
           </div>
           <div id="inputform">
             <form action="payment.html" method="get">
-              <label for="pcount">Adult: </label>
-              <input
-                id="input1"
-                type="number"
-                value="1"
-                min="1"
-                name="pcount"
-                autocomplete="off"
-                required
-              /><br />
-              <label for="name">Name: </label>
-              <input
-                id="input2"
-                type="text"
-                name="name"
-                autocomplete="off"
-                required
-              /><br />
-              <label for="indate">From Date: </label>
-              <input
-                id="input3"
-                type="date"
-                name="indate"
-                autocomplete="off"
-                required
-              /><br />
-              <label for="outdate">To Date: </label>
-              <input
-                id="input4"
-                type="date"
-                name="outdate"
-                autocomplete="off"
-                required
-              /><br />
-              <label for="total">Total: </label>
-              <input id="input5" type="number" name="total" disabled /><br />
-              <button type="submit">Book Now</button>
+              <div class="form-group row">
+                <label for="pcount" class="col-sm-5 col-form-label">Adult: </label>
+                <div class="col-sm-6">
+                  <input
+                  type="number"
+                  value="1"
+                  min="1"
+                  name="pcount"
+                  autocomplete="off"
+                  required
+                />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-5 col-form-label">Name: </label>
+                <div class="col-sm-6">
+                  <input
+                  type="text"
+                  name="name"
+                  autocomplete="off"
+                  required
+                />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="indate" class="col-sm-5 col-form-label">From Date: </label>
+                <div class="col-sm-6">
+                  <input
+                  type="date"
+                  name="indate"
+                  autocomplete="off"
+                  required
+                />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="outdate" class="col-sm-5 col-form-label">To Date: </label>
+                <div class="col-sm-6">
+                  <input
+                  type="date"
+                  name="outdate"
+                  autocomplete="off"
+                  required
+                />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="total" class="col-sm-5 col-form-label">Total: </label>
+                <div class="col-sm-6">
+                <input id="input5" type="number" name="total" disabled />
+                </div>
+              </div>
+              <div class="form-group row d-flex align-items-center justify-content-center">
+                <div class="col-sm-12"></div>
+                <button type="submit" class="btn btn-outline-success">Book Now</button>
+              </div>
             </form>
           </div>
         </div>
@@ -99,7 +180,43 @@
       </div>
       <footer>
         <div class="contact">
-          <a href="contact.html">Contact Us</a>
+          <button class="btn btn-info" type="button" data-toggle="modal"
+          data-target="#ContactModal">Contact Us</button>
+          <!-- Contact Modal -->
+          <div class="modal fade" id="ContactModal" data-backdrop="false" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Get in touch</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body m-0">
+                  <span>Thank you for reaching out!!!</span><br />
+                  <span>Please enter your email and we will get back to you.</span>
+                  <p>
+                    <form action="index.html" method="get">
+                      <div class="form-group row">
+                        <label for="email" class="col-sm-1 col-form-label">Email: </label>
+                        <div class="col-sm-8">
+                          <input      
+                          type="email"
+                          placeholder="Enter your email id"
+                          name="email"
+                          autocomplete="off"
+                          required>
+                        </div>
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id="license">© 2021 ROOM SEARCH PVT.LTD.</div>
           <div id="socialmedia">
             <a href="https://www.facebook.com" target="_blank"

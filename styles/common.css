@@ -4,23 +4,29 @@ html {
   height: 100%;
   width: 100%;
   background-color: #e0e0e0;
+}
+* {
   font-family: "Ubuntu", sans-serif;
 }
+* a {
+  text-decoration: none;
+}
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rosybrown;
   position: sticky;
   top: 0;
   padding: 0 1%;
   display: flex;
-  align-items: flex-end;
-  z-index: 1;
 }
 footer {
   background-color: rosybrown;
   position: sticky;
   bottom: 0;
   padding: 1%;
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -59,4 +65,9 @@ footer a {
 #socialmedia a img {
   height: 20px;
   width: 22px;
+}
+footer form input {
+  position: relative;
+  left: 8px;
+  top: 5px;
 }

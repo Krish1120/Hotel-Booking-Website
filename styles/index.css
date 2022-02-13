@@ -79,5 +79,5 @@
 }
 
 .loginform input {
-  display: flex;
+  border-radius: 4px;
 }

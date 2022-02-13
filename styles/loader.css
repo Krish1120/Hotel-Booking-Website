@@ -14,4 +14,13 @@ html {
   border-top: 12px solid #444444;
   width: 70px;
   height: 70px;
+  animation: 1s linear infinite spinner;
+}
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
 }

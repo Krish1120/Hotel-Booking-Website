@@ -21,6 +21,10 @@
   text-decoration: none;
   color: black;
 }
+.hotel a:hover {
+  text-decoration: none;
+  color: black;
+}
 
 ul li a {
   text-decoration: none;
@@ -30,13 +34,13 @@ ul li a {
 ul li {
   margin: 1%;
 }
-#mapview {
-  display: none;
-}
 ul {
   list-style: none;
   display: flex;
-  position: relative;
-  right: 65px;
+  align-items: center;
   justify-content: center;
+}
+
+.hotel:hover {
+  background: rosybrown;
 }
