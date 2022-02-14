@@ -32,3 +32,10 @@ input {
 form {
   height: 100%;
 }
+
+.stars {
+  font-size: 1.3em;
+}
+.fa-star {
+  color: orange;
+}

@@ -44,3 +44,9 @@ ul {
 .hotel:hover {
   background: rosybrown;
 }
+.stars {
+  font-size: 1.3em;
+}
+.star {
+  color: orange;
+}
