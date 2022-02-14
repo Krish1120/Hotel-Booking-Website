@@ -50,3 +50,6 @@ ul {
 .star {
   color: orange;
 }
+#mapview {
+  display: none;
+}

@@ -81,3 +81,7 @@
 .loginform input {
   border-radius: 4px;
 }
+
+#morelocations {
+  display: none;
+}

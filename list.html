@@ -21,145 +21,142 @@
       <header class="d-flex justify-content-space-between align-items-center">
         <img src="assests/images/logo.png" alt="logo" class="logo" />
         <button
-          type="button"
-          class="btn btn-light btn-primary"
-          data-toggle="modal"
-          data-target="#loginModal"
-        >
-          LOGIN
-        </button>
-
-        <!--LoginIn Modal -->
-        <div
-        class="modal"
-        id="loginModal"
-        data-backdrop="false"
-        data-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
+        type="button"
+        class="btn btn-light btn-primary"
+        id="logindis"
+        data-toggle="modal"
+        data-target="#loginModal"
+        onclick="logChange()"
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">
-                Please Login
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form class="loginform" action="index.html" method="get">
-                <div class="form-group row">
-                  <label for="uname" class="col-sm-5 col-form-label text-center">Username:</label>
-                  <div class="col-sm-6">
-                    <input      
-                    type="text"
-                    placeholder="Enter Username"
-                    name="uname"
-                    autocomplete="off"
-                    required>
-                  </div>
+        LOGIN
+      </button>
+    
+      <!--LoginIn Modal -->
+      <div
+      class="modal"
+      id="loginModal"
+      data-backdrop="false"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Please Login
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="loginform" name="logform" action="index.html" method="get" onclick="logged()">
+              <div class="form-group row">
+                <label for="uname" class="col-sm-5 col-form-label text-center">Username:</label>
+                <div class="col-sm-6">
+                  <input      
+                  type="text"
+                  placeholder="Enter Username"
+                  name="uname"
+                  autocomplete="off"
+                  required>
                 </div>
-                <div class="form-group row">
-                  <label for="pswd" class="col-sm-5 col-form-label text-center">Password:</label>
-                  <div class="col-sm-6">
-                    <input      
-                    type="password"
-                    placeholder="Enter Password"
-                    name="pswd"
-                    autocomplete="off"
-                    required>
-                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="pswd" class="col-sm-5 col-form-label text-center">Password:</label>
+                <div class="col-sm-6">
+                  <input      
+                  type="password"
+                  placeholder="Enter Password"
+                  name="pswd"
+                  autocomplete="off"
+                  required>
                 </div>
-              </form>
-            </div>
-            <div class="modal-footer d-flex align-items-center justify-content-center">
-              <button type="submit" class="btn btn-primary">Login</button>
-            </div>
+              </div>
+              <div class="modal-footer d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-primary">Login</button>
+              </div>
+            </form>
           </div>
         </div>
+      </div>
       </header>
       <div class="content">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" data-toggle="pill" href="#hotels">List View</a>
+            <a class="nav-link active" data-toggle="pill" onclick="viewList()">List View</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="pill" href="#mapview">Map View</a>
+            <a class="nav-link" data-toggle="pill" onclick="viewMap()">Map View</a>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane active" id="hotels" role="tabpanel">
-            <div id="listview">
-              <div class="hotel">
-                <a href="detail.html"
-                  ><img
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt=""
-                  />
-                  <div class="hoteldetails">
-                    <h3>Radisson Blu Hotel</h3>
-                    <div class="stars">
-                      <i class="fa fa-star star" aria-hidden="true"></i>
-                      <i class="fa fa-star star" aria-hidden="true"></i> 
-                      <i class="fa fa-star star" aria-hidden="true"></i> 
-                      <i class="fa fa-star star" aria-hidden="true"></i> 
-                      <i class="fa fa-star star" aria-hidden="true"></i> 
-                    </div>
-                    <p>New Delhi</p></a>
-                  </div>
-              </div>
-              <div class="hotel">
-                <img
-                  src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                  alt=""
-                />
-                <div class="hoteldetails">
-                  <h3>The Lalit New Delhi</h3>
-                  <div class="stars">
-                    <i class="fa fa-star star" aria-hidden="true"></i>
-                    <i class="fa fa-star star" aria-hidden="true"></i> 
-                    <i class="fa fa-star star" aria-hidden="true"></i> 
-                    <i class="fa fa-star-half-o star" aria-hidden="true"></i> 
-                    <i class="fa fa-star" aria-hidden="true"></i> 
-                  </div>
-                  <p>New Delhi</p>
-                </div>
-              </div>
-              <div class="hotel">
-                <img
-                  src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                  alt=""
-                />
-                <div class="hoteldetails">
-                  <h3>Taj Palace</h3>
-                  <div class="stars">
-                    <i class="fa fa-star  star" aria-hidden="true"></i>
-                    <i class="fa fa-star star" aria-hidden="true"></i> 
-                    <i class="fa fa-star star" aria-hidden="true"></i> 
-                    <i class="fa fa-star star" aria-hidden="true"></i> 
-                    <i class="fa fa-star" aria-hidden="true"></i> 
-                  </div>
-                  <p>New Delhi</p>
-                </div>
-              </div>
-          </div>
-          <div class="tab-pane fade" id="mapview" role="tabpanel">
-              <img
-                src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+        <div id="listview">
+          <div class="hotel">
+            <a href="detail.html"
+              ><img
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                 alt=""
               />
-              <p>MAP VIEW</p>
+              <div class="hoteldetails">
+                <h3>Radisson Blu Hotel</h3>
+                <div class="stars">
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i> 
+                  <i class="fa fa-star star" aria-hidden="true"></i> 
+                  <i class="fa fa-star star" aria-hidden="true"></i> 
+                  <i class="fa fa-star star" aria-hidden="true"></i> 
+                </div>
+                <p>New Delhi</p></a>
+              </div>
           </div>
-        </div>
-        </div>
+          <div class="hotel">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+              alt=""
+            />
+            <div class="hoteldetails">
+              <h3>The Lalit New Delhi</h3>
+              <div class="stars">
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i> 
+                <i class="fa fa-star star" aria-hidden="true"></i> 
+                <i class="fa fa-star-half-o star" aria-hidden="true"></i> 
+                <i class="fa fa-star" aria-hidden="true"></i> 
+              </div>
+              <p>New Delhi</p>
+            </div>
+          </div>
+          <div class="hotel">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+              alt=""
+            />
+            <div class="hoteldetails">
+              <h3>Taj Palace</h3>
+              <div class="stars">
+                <i class="fa fa-star  star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i> 
+                <i class="fa fa-star star" aria-hidden="true"></i> 
+                <i class="fa fa-star star" aria-hidden="true"></i> 
+                <i class="fa fa-star" aria-hidden="true"></i> 
+              </div>
+              <p>New Delhi</p>
+            </div>
+          </div>
+      </div>
+      <div id="mapview">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+            alt=""
+          /><br/>
+      </div>
       <footer>
         <div class="contact">
           <button class="btn btn-info" type="button" data-toggle="modal"
@@ -214,5 +211,34 @@
         </div>
       </footer>
     </div>
+    <script>
+      var count = 0;
+      logged = ()=>{
+      let user = document.forms["logform"]["uname"].value;
+      let pass = document.forms["logform"]["pswd"].value;
+      if(user === "admin" && pass === "admin"){
+        alert("Successfully loggedin");
+        var btn = document.getElementById("logindis");
+        btn.innerHTML = "LOGOUT";
+        btn.dataset.target = "";
+        count = 1;
+      }
+      }
+      logChange = () =>{
+        if(count === 1){
+        var btn = document.getElementById("logindis");
+        btn.innerHTML = "LOGIN";
+        window.location.reload();
+        }
+      }
+      viewMap = () =>{
+        document.getElementById('listview').style.display = "none";
+        document.getElementById('mapview').style.display = "flex";
+      }
+      viewList = () =>{
+        document.getElementById('listview').style.display = "flex";
+        document.getElementById('mapview').style.display = "none";
+      }
+    </script>
   </body>
 </html>
