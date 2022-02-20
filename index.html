@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Index</title>
@@ -244,40 +246,5 @@
         </div>
       </footer>
     </div>
-    <script>
-      var count = 0;
-      logged = ()=>{
-      let user = document.forms["logform"]["uname"].value;
-      let pass = document.forms["logform"]["pswd"].value;
-      if(user === "admin" && pass === "admin"){
-        alert("Successfully loggedin");
-        var btn = document.getElementById("logindis");
-        btn.innerHTML = "LOGOUT";
-        btn.dataset.target = "";
-        count = 1;
-      }
-      }
-      logChange = () =>{
-        if(count === 1){
-        var btn = document.getElementById("logindis");
-        btn.innerHTML = "LOGIN";
-        window.location.reload();
-        }
-      }
-      var viewCount =0;
-      view = () =>{
-        if(viewCount===0){
-          var more = document.getElementById('morelocations');
-          more.style.display = "flex";
-          viewCount =1;
-          document.getElementById('viewbtn').innerHTML ="View Less"
-        }else{
-          var more = document.getElementById('morelocations');
-          more.style.display = "none";
-          viewCount = 0;
-          document.getElementById('viewbtn').innerHTML ="View More"
-        }
-      }
-    </script>
   </body>
 </html>
